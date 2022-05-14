@@ -4,16 +4,17 @@ module.exports = {
     es2021: true
   },
   extends: [
-    "standard"
+    'standard'
   ],
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module"
+    ecmaVersion: 'latest',
+    sourceType: 'module'
   },
   rules: {
-    quotes: ["error", "double"],
-    semi: ["error", "always"],
-    "comma-dangle": ["error", "only-multiline"],
-    "space-before-function-paren": ["error", "never"]
+    quotes: ['error', 'single'],
+    semi: ['off'],
+    'comma-dangle': ['error', 'only-multiline'],
+    'space-before-function-paren': ['error', 'never'],
+    'no-useless-constructor': ['off'],
   }
-};
+}
